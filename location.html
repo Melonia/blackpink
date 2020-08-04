@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>찾아오시는 길</title>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCconDqJT560d9WLD2AQOv31FywIzW3l3E"></script>
+<script>
+	var myCenter = new google.maps.LatLng(37.605479, 126.905429);
+	function myMap()
+	{
+		var mapProp = {
+			center : myCenter,
+			zoom : 15,
+			mapTypeId : google.maps.MapTypeId.ROADMAP};
+		
+		var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+		var marker = new google.maps.Marker({
+			position : myCenter,
+			animation : google.maps.Animation.BOUNCE
+		});
+		marker.setMap(map);
+	}
+</script>
+</head>
+<body onload="myMap()" style="background-color:blueviolet;">
+	<div id="googleMap" style="width: 500px; height: 380px; margin-left:40%; margin-top:15%;"></div>
+</body>
+</html>

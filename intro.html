@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>인사말</title>
+        <style>
+            body{
+               
+                background-size:100% 100%;
+                background-attachment: fixed;
+            }
+            div{
+                margin : 10px 50px;
+                border : 1px solid black;
+            }
+            p{
+                font-family: "나눔바른고딕";
+                font-size: 50px;
+                color:black;
+                text-indent: 10px;
+            }
+            .content{
+                height:1000px;
+            }
+            video{
+                float : right;
+                margin-right:100px;
+            }
+            .introduction{
+              background:radial-gradient(circle at 10% 10%,pink,white);
+            }
+        </style>
+    </head>
+    <body>
+       <div class="introduction">
+            <p style="letter-spacing:5px">Blackpink Introduction</p>
+        </div>
+        <div class="content">
+            <p style="font-size:30px">블랙핑크는 세계 최고의 걸그룹이다.</p>
+            <video autoplay controls width="600" height="450">
+                <source src="video/dance.mp4" type="video/mp4">
+                    <source src="video/dance.ogv" type="video/ogg">
+                        <source src="video/dance.webm" type="video/webm">
+            </video>
+        </div>
+    </body>
+</html>

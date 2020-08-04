@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+.cover_cover {
+	position :relative;
+	width : 100%;
+	height : 1200px;
+}
+
+.cover>div {
+	position : absolute;
+	top : -210px;
+	width : 100%;
+	height : 1200px;
+	display:flex;
+}
+
+.cover>div:nth-child(1) {
+	background-image : url(../images/Jenni.jpg) ;
+	background-size:100% 100%;
+	background-attachment: fixed;
+
+}
+.cover>div:nth-child(2) {
+	background-image : url(../images/Jisu.jpg);
+	background-size:100% 100%;
+	background-attachment: fixed;
+	transition-property:width;
+	transition-duration:2.2s,3s;
+	transition-delay:2s;
+	
+}.cover>div:nth-child(3) {
+	background-image : url(../images/Lisa.jpg);
+	background-size:100% 100%;
+	background-attachment: fixed;
+	
+	
+}
+
+
+.image{
+	width:400px;
+	height:500px;
+}
+.bullet {
+	position : absolute;
+	
+	width : 10px;
+	top : 28%;
+	right : 50px;
+}
+.bullet>li {
+	width : 20px;
+	height : 20px;
+	background-color : rgb(69, 25, 189);
+	float : left;
+	margin-bottom : 25px;
+	cursor : pointer;
+	
+}
+.contents{
+	margin-bottom:100px;
+}
+.group{
+	background-color:gray;
+	border: 3px solid blue;
+}
+.script>p{
+	font-size: 100px;
+}
+
+.food {
+	
+	position : relative;
+	width : 100%;
+	height : 1400px;
+	border : 2px solid blue;
+}
+
+.sandwich {
+	position : absolute;
+	right : 100px;
+	top : 0;
+	width : 800px;
+	height : 100px;
+	z-index : 30;
+}
+
+.sandwich>img{
+	width:300px;
+	height:300px;
+}
+.smoothie_bowl {
+	position : absolute;
+	left : 0;
+	bottom : 200px;
+	width : 600px;
+	height : 700px;
+	z-index : 50;
+}
+
+
+.paste {
+	position : absolute;
+	right : 0;
+	top : 300px;
+	width : 900px;
+	height : 1200px;
+	z-index : 29;
+}
+
+.blackpink>p {
+	position : relative;
+	width : 100%;
+	height : 700px;
+	background : url(../images/blackpink3.jpg) no-repeat;
+	background-attachment : fixed;
+	background-size : cover;
+	border : 1px solid red;
+}
+
+.mid_1 {
+	position : relative;
+	width : 1600px;
+	height : 500px;
+	top : 100px;
+	margin-bottom: 10px;
+}
+
+.mid_1:after {
+	content : "";
+	display : block;
+	clear : both;
+}
+
+/*
+.mid_1>p>span {
+	width : 200px;
+	height : 50px;
+	background : url(../images/logo4.png) no-repeat;
+	float : left;
+	margin-top : 5px;
+}
+*/
+.mid_1>p {
+	width : 1300px;
+	height : 80px;
+	line-height : 80px;
+	text-align : center;
+	font-size : 50px;
+	float : left;
+}
+.mid_1>div>ul {
+	position : relative;
+	width : 1400px;
+	height : 600px;
+	margin : 130px 30px;
+}
+
+.mid_1>div>ul>li {
+	width : 300px;
+	height : 340px;
+	float : left;
+}
+.mid_1>div>ul>li:nth-child(2) {
+	margin : 0 100px;
+}
+
+.mid_1 h3 {
+	margin-top : 40px;
+	font-size : 1.5em;
+}
+
+.mid_1 p {
+	margin-top : 10px;
+}

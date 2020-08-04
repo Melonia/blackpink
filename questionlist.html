@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>question</title>
+        <style>
+            body{
+                background-color:gray;
+            }
+            table{
+                border: 1px solid red;
+                width:1000px;
+                margin-bottom: 30px;
+                margin-left:300px;
+                margin-right:300px;
+            }
+            p{
+                color:white;
+            }
+            td{
+                height: 80px;
+            }
+            button{
+                color:black;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <caption style="color:white">질문들</caption>
+            <tr>  
+             <td>
+            
+                <p>제니는 어디가면 볼 수 있나요?</p>
+             </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>리사는 어디가면 볼 수 있나요?</p>
+                </td>
+            </tr>
+           
+        </table>
+       
+        <div style="margin-right:300px; margin-left:300px;">
+            <textarea placeholder="지수는 어디가면 볼 수 있나요?" name="question" id="" cols="60" rows="5"></textarea>
+            <button onclick="add()" >제출</button>
+        </div>
+        <script>
+            function add(){
+        var quest=document.querySelector("textarea").value;
+        document.querySelector("table").innerHTML+="<tr><td><p>"+quest+"</p></td></tr>";
+        }</script>
+    </body>
+</html>
